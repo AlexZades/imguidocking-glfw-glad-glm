@@ -142,7 +142,7 @@ endif ()
 if (IMPORT_IMGUI)
     FetchContent_Declare(
             imgui
-            GIT_REPOSITORY https://github.com/ocornut/imgui.git
+            GIT_REPOSITORY https://github.com/ocornut/imgui/tree/docking.git
             GIT_TAG ${IGG_IMGUI_TAG}
     )
     list(APPEND components imgui)
