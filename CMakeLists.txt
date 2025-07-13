@@ -37,7 +37,7 @@ else ()
     unset(IGG_GLAD_GL_CORE CACHE)
 endif ()
 if (IMPORT_IMGUI)
-    set(IGG_IMGUI_TAG master CACHE STRING "Defines the imgui version (e.g. master, v1.89.4, v1.89.3, ...")
+    set(IGG_IMGUI_TAG docking CACHE STRING "Defines the imgui version (e.g. docking, v1.89.4, v1.89.3, ...")
     set(IMPORT_GLFW ON)
 else ()
     unset(IGG_IMGUI_TAG CACHE)
@@ -142,7 +142,7 @@ endif ()
 if (IMPORT_IMGUI)
     FetchContent_Declare(
             imgui
-            GIT_REPOSITORY https://github.com/ocornut/imgui/tree/docking/imgui.git
+            GIT_REPOSITORY https://github.com/ocornut/imgui.git
             GIT_TAG ${IGG_IMGUI_TAG}
     )
     list(APPEND components imgui)
